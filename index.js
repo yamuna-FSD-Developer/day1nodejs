@@ -27,7 +27,7 @@ app.get('/write',(req,res)=>{
 
 app.get('/retrieve',(req,res)=>{
 
-    const folderPath = 'C:/Users/pv Giri/Nodejsprogram/TimeStamp'; 
+    const folderPath = 'C:/Users/pv Giri/nodejsday1/TimeStamp'; 
     try {
         fs.readdir(folderPath, (err, files) => {
             if (err) {
