@@ -6,10 +6,10 @@ import path from "path";
 const app= express();
 const PORT=4000; //http://localhost:4000/
 
-// app.get('/',(req,res)=>{
+app.get('/',(req,res)=>{
 
-//       res.status(200).json({message:"Hi friends"})
-// })
+      res.status(200).json({message:"Hi friends"})
+})
 
 // app.get('/get-data',(req,res)=>{
 
