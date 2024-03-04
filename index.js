@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
 // })
 
 app.get('/write',(req,res)=>{
-    let task= format(new Date(), 'dd-mm-yyyy-HH-mm-ss')
+    let task= format(new Date(), 'YYYY-MM-DD HH:mm:ss')
     console.log(("task",task));
     const filePath= `TimeStamp/${task}.txt`
     fs.writeFileSync(filePath, `${task}`, 'utf8')
